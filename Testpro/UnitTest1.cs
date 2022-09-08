@@ -21,8 +21,7 @@ public class UnitTest1
     }
     [Fact]
     public void TestchangeValue(){
-        double Number = 5120.25;
-        double [] awsChange = change.change_Value(Number);
+        double [] awsChange = change.change_Value(5120.25);
         double [] CheakChange = {5,0,1,0,1,0,0,0,0,0,1};
         Assert.Equal(awsChange,CheakChange);
     }
